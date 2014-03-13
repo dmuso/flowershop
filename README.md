@@ -1,3 +1,14 @@
+### TODO:
+
+-   setup directory structure
+-   decide on input format
+-   decide on output format
+-   setup program architecture
+-   setup Guardfile
+-   setup a sample spec
+
+- - -
+
 # The Flowershop
 
 This program will calculate the number and types of bundles for 
@@ -33,6 +44,11 @@ input
 output
 
 logs
+
+
+## File and directory structure
+
+TODO
 
 
 ## Running the tests
