@@ -1,1 +1,3 @@
-bundle.rb
+class Bundle
+
+end

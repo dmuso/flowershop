@@ -1,6 +1,6 @@
 
 log:
-	active:	true
-	level:	debug
-	file:	./log/flowershop.log
+  active: true
+  level:  debug
+  file: ./log/flowershop.log
 
