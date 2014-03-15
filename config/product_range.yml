@@ -1,0 +1,30 @@
+products:
+
+-	name:	Roses
+	code:	R12
+	bundles:
+		-	qty: 	5
+			price:	699
+		-	qty:	10
+			price:	1299
+
+-	name:	Lilies
+	code:	L09
+	bundles:
+		-	qty:	3
+			price:	995
+		-	qty:	6
+			price:	1695
+		-	qty:	9
+			price:	2495
+
+-	name:	Tulips
+	code:	T58
+	bundles:
+		-	qty:	3
+			price:	595
+		-	qty:	5
+			price:	995
+		-	qty:	9
+			price:	1699
+
