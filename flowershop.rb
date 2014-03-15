@@ -11,11 +11,15 @@ class Flowershop
     # Load local classes
     Dir['./lib/**/*.rb'].map {|f| require f}
 
-    # Open the configuration file
-    @config = YAML.load_file("./config/config.yml")
-
     ProductBundler.new
     Product.new
   end
+
+  def config
+    # Open the configuration file
+    @config ||= YAML.load_file("./config/config.yml")
+  end
   
 end
+
+Flowershop.new
