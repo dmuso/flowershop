@@ -24,12 +24,4 @@ describe Product do
 
   end
 
-  describe '#find_by_code' do
-
-    it 'should return a product object' do
-      
-    end
-
-  end
-  
 end

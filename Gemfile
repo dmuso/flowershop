@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 group :test do
   # for running the tests
   gem 'rspec', "~> 2.14.1"
+  gem 'mocha', "~> 1.0.0"
 end
 
 group :development do

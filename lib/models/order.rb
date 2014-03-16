@@ -6,7 +6,7 @@ class Order
     @order_items = []
     order_input.each do |oi|
       oi.each_pair do |code, quantity|
-        @order_items << OrderItem.new(Product.find_by_code(code), quantity)
+        @order_items << OrderItem.new(ProductRange.find_product_by_code(code), quantity)
       end
     end
   end

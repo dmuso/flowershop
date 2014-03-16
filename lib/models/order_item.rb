@@ -1,6 +1,6 @@
 class OrderItem
 
-  def initialize()
+  def initialize(product, quantity)
   end
 
 end
