@@ -13,6 +13,16 @@ class Flowershop
 
   end
 
+  def bundleize(input)
+    input_hash = text_input_to_hash(input)
+    Order.new(input_hash)
+  end
+
+  def text_input_to_hash(text)
+    text_parts = text.split(" ")
+    return [ { text_parts[1].to_s => text_parts[0].to_i } ]
+  end
+
 end
 
 Flowershop.new
