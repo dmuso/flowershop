@@ -2,12 +2,13 @@ require 'spec_helper'
 
 describe ProductBundler do
 
-  before(:each) do
-    @product_bundler = ProductBundler.new
+  describe '#bundle_me' do
+
+    before(:each) do
+      @order = Order.new([ "R12" => 10 ])
+    end
+
   end
 
-  describe 'initialize' do
-
-  end
   
 end

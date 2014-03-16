@@ -6,7 +6,7 @@ describe Product do
     @product = Product.new("Pretty Flower", "PF1", [ "quantity" => 1, "price" => 199 ])
   end
 
-  describe 'initialize' do
+  describe '#initialize' do
 
     it 'should initialise the product attributes' do
       expect(@product.name).to eq("Pretty Flower")
@@ -21,7 +21,7 @@ describe Product do
       expect(@product.bundles.first.quantity).to eq(1)
       expect(@product.bundles.first.price).to eq(199)
     end
-    
+
   end
   
 end

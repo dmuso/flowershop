@@ -7,11 +7,11 @@ describe Flowershop do
     @flowershop.stub(:product_range).and_return({ "products" => [ product_roses_default, product_lillies_default ] })
   end
 
-  describe 'initialize' do
+  describe '#initialize' do
 
   end
 
-  describe '#load_products' do
+  describe '.load_products' do
 
     it 'should return an array' do
       expect(@flowershop.load_products).to be_an_instance_of(Array)
@@ -37,7 +37,7 @@ describe Flowershop do
 
   end
 
-  describe '#config' do
+  describe '.config' do
 
     it 'loads a configuration file' do
       expect(@flowershop.config["log"]["level"]).to be_an_instance_of(String)
