@@ -30,6 +30,8 @@ describe Flowershop do
     end
 
     it 'should by default have two products' do
+      # the official list has 3 items, checking for 2 will make sure
+      # we're using the stubbed version
       expect(@flowershop.load_products.length).to eq(2)
     end
 

@@ -7,7 +7,7 @@ class Product
     @code = code
     @bundles = []
     bundles.each do |b|
-      @bundles << Bundle.new
+      @bundles << Bundle.new(b["quantity"], b["price"])
     end
   end
 
