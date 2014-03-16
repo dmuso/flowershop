@@ -1,11 +1,8 @@
 ### TODO:
 
--   setup directory structure
 -   decide on input format
 -   decide on output format
 -   setup program architecture
--   setup Guardfile
--   setup a sample spec
 
 - - -
 
@@ -31,8 +28,6 @@ a number of configration options that you can set:
 
 -   `product_range.yml`. This file lists the flower product range, pricing
     and bundle combinations.
--   `config.yml`. This file will allow you to set general options like
-    logging information.
 
 
 ## Running the program
@@ -42,8 +37,6 @@ TODO
 input
 
 output
-
-logs
 
 
 ## File and directory structure

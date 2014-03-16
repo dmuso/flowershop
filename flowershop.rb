@@ -26,11 +26,6 @@ class Flowershop
     @product_range ||= YAML.load_file("./config/product_range.yml")
   end
 
-  def config
-    # Open the configuration file
-    @config ||= YAML.load_file("./config/config.yml")
-  end
-
 end
 
 Flowershop.new

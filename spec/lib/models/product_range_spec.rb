@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Product do
+describe ProductRange do
 
   before(:each) do
     @product = Product.new("Pretty Flower", "PF1", [ "quantity" => 1, "price" => 199 ])

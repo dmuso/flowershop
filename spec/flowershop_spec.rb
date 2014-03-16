@@ -37,14 +37,6 @@ describe Flowershop do
 
   end
 
-  describe '.config' do
-
-    it 'loads a configuration file' do
-      expect(@flowershop.config["log"]["level"]).to be_an_instance_of(String)
-    end
-
-  end
-
 end
 
 def product_roses_default
