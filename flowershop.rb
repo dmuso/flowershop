@@ -17,7 +17,7 @@ class Flowershop
   def load_products
     products = []
     product_range["products"].each do |p|
-      products << Product.new(p)
+      products << Product.new(p["name"], p["code"], p["bundles"])
     end
     products
   end

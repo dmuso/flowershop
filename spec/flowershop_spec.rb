@@ -4,7 +4,7 @@ describe Flowershop do
 
   before(:each) do
     @flowershop = Flowershop.new
-    Flowershop.stub(:product_range).and_return({ products: [ product_roses_default ] })
+    @flowershop.stub(:product_range).and_return({ "products" => [ product_roses_default, product_lillies_default ] })
   end
 
   describe 'initialize' do
@@ -29,6 +29,10 @@ describe Flowershop do
       expect(@flowershop.load_products.first.name).to eq("Roses")
     end
 
+    it 'should by default have two products' do
+      expect(@flowershop.load_products.length).to eq(2)
+    end
+
   end
 
   describe '#config' do
@@ -42,11 +46,22 @@ describe Flowershop do
 end
 
 def product_roses_default
-  { name: "Roses", code: "R12", 
-    bundles: 
+  { "name" => "Roses", "code" => "R12", 
+    "bundles" => 
     [ 
-      { quantity: 5, price: 699 }, 
-      { quantity: 10, price: 1299 } 
+      { "quantity" => 5,  "price" => 699 }, 
+      { "quantity" => 10, "price" => 1299 } 
+    ] 
+  } 
+end
+
+def product_lillies_default
+  { "name" => "Lillies", "code" => "L09", 
+    "bundles" => 
+    [ 
+      { "quantity" => 3,  "price" => 995 }, 
+      { "quantity" => 6,  "price" => 1695 }, 
+      { "quantity" => 9,  "price" => 2495 } 
     ] 
   } 
 end
