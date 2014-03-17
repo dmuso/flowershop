@@ -2,7 +2,8 @@
 
 -   decide on input format
 -   decide on output format
--   setup program architecture
+-   input and output to flowershop.rb is unimplemented due to
+    running out of time.
 
 - - -
 
@@ -14,8 +15,8 @@ incoming flower orders.
 
 ## Prerequisites
 
--   *Ruby v2.1.0*. Older versions of Ruby should work fine, although they
-    haven't been tested.
+-   *Ruby v2.1.0*. Older versions of Ruby 1.9+ should work fine, although 
+    they haven't been tested.
 -   *RSpec v2.14.1*.  RSpec is required to run the test suite.
 -   *RVM*. RVM is optional but support has been added for specific ruby
     versioning and a dedicated gemset.
@@ -35,13 +36,7 @@ a number of configration options that you can set:
 TODO
 
 input
-
 output
-
-
-## File and directory structure
-
-TODO
 
 
 ## Running the tests
