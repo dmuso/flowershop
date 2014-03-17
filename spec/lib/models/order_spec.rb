@@ -60,7 +60,7 @@ describe Order do
       expect(@order.order_items[0].order_bundles[0].total).to eq (1299)
       expect(@order.order_items[1].order_bundles[0].total).to eq (2495)
       expect(@order.order_items[1].order_bundles[1].total).to eq (1695)
-      expect(@order.order_items[2].order_bundles[0].total).to eq (995)
+      expect(@order.order_items[2].order_bundles[0].total).to eq (1990)
       expect(@order.order_items[2].order_bundles[1].total).to eq (595)
     end
 
@@ -73,7 +73,15 @@ describe Order do
     end
 
     it 'should reflect the output format required' do
-      pending      
+      expect(@order.to_output).to eq("10 R12 1299
+  1 10 1299
+15 L09 4190
+  1 9 2495
+  1 6 1695
+13 T58 2585
+  2 5 1990
+  1 3 595
+")
     end
 
   end

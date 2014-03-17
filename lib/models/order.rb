@@ -11,22 +11,15 @@ class Order
     end
   end
 
-
-  # Order
-  #   OrderItem
-  #     Product
-  #       Bundle
-  #       Bundle
-  #   OrderItem
-  #     Product
-  #       Bundle
-  #       Bundle
-  #       Bundle
-  
   def to_output
-    @order_items.each do |order_item|
-      "#{order_item.total_quantity} #{order_item.product.code} #{order_item.product.code}"
+    output = ""
+    @order_items.each do |oi|
+      output += "#{oi.order_quantity} #{oi.product.code} #{oi.total}\n"
+      oi.order_bundles.each do |ob|
+        output += "  #{ob.quantity} #{ob.bundle.quantity} #{ob.total}\n"
+      end
     end
+    output
   end
 
 end

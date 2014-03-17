@@ -15,7 +15,7 @@ class Flowershop
 
   def bundleize(input)
     input_hash = text_input_to_hash(input)
-    Order.new(input_hash)
+    o = Order.new(input_hash)
   end
 
   def text_input_to_hash(text)
@@ -26,3 +26,4 @@ class Flowershop
 end
 
 Flowershop.new
+
